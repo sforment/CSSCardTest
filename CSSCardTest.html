@@ -7,7 +7,8 @@
 </head>
 <body>
 
-<div class='cardContainer'>
+<!-- the following 'block' is hidden in order to be 'copy and pasted' via JS -->
+<script id='block' type='text/html'>
 	<div class='cardPosition'>
 		<div class='cardFront'>
 			<button class='addButton addWeapon'> ADD A WEAPON
@@ -18,9 +19,27 @@
 			<button class='addButton doneWeapon '> DONE	
 			</button>
 		</div>
+	</div>	
+</script>
+
+<div id='target'>
+	<div class='cardContainer'>
+		<div class='cardPosition'>
+			<div class='cardFront'>
+				<button class='addButton addWeapon'> ADD A WEAPON
+					<i class="fas fa-plus"></i>
+				</button>
+			</div>
+			<div class='cardBack'>
+				<button class='addButton doneWeapon '> DONE	
+				</button>
+			</div>
+		</div>
 	</div>
 </div>
 
 </body>
+
 <script type="text/javascript" src="index.js"></script>
+
 </html>
