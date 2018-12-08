@@ -1,0 +1,67 @@
+body {
+    background-color: #5b5b59;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cardContainer {
+  background-color: transparent;
+  width: 17.7em;
+  height: 25em;
+  perspective: 1000px;
+  padding: 20px;
+}
+
+.cardPosition {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1.2s;
+  transform-style: preserve-3d;
+}
+
+.cardPosition1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1.2s;
+  transform-style: preserve-3d;
+  transform: rotateY(180deg);
+}
+
+.cardFront, .cardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  font-family: 'Exo 2', sans-serif;
+}
+
+.cardFront {
+  background-color: #ffa826;
+}
+
+.cardBack {
+  background-color: #bbb;
+  transform: rotateY(180deg);
+}
+
+.addButton {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 15px;
+    border: none;
+    width: 60%;
+    font-family: 'Exo 2', sans-serif;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    transition: box-shadow 0.3s ease-in-out;
+    margin: 20px; 
+}
+
+.addButton:hover {
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
